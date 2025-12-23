@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #050505;
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.subtitle {
+  color: #ffcc00;
+  letter-spacing: 2px;
+}
+
+.glow {
+  font-size: 4rem;
+  color: #ffcc00;
+  text-shadow: 0 0 25px rgba(255, 204, 0, 0.9);
+  margin: 10px 0 20px;
+}
+
+.desc {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.name {
+  color: #ffcc00;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background: #ffcc00;
+  color: #000;
+}
+
+.btn.primary:hover {
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.9);
+}
+
+.btn.outline {
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+}
+
+.btn.outline:hover {
+  background: #ffcc00;
+  color: #000;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  font-size: 1.4rem;
+}
+
+.socials a {
+  color: #aaa;
+}
+
+.socials a:hover {
+  color: #ffcc00;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 100px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #ffcc00;
+}
+
+/* ⭐ CENTERING FIX */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 420px));
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #0d0d0d;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 204, 0, 0.15);
+  transition: 0.3s ease;
+  min-height: 220px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(255, 204, 0, 0.25);
+}
+
+.project-card h3 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.tech {
+  color: #ffcc00;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
