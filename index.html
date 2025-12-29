@@ -1,27 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Glowing Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-  <section class="hero">
-    <h1 class="subtitle">Let’s turn ideas into</h1>
-    <h2 class="glow">Reality</h2>
+
+  <aside class="side-nav">
+  <div class="side-profile">
+    <h3>Au Amores</h3>
+    <span>Software Dev · AI</span>
+  </div>
+
+  <nav class="side-links">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#tech-stack" class="nav-link">Tech Stacks</a>
+    <a href="#experience" class="nav-link">Experience</a>
+   <a href="#contact" class="nav-link">Contact</a>
+
+  </nav>
+
+  <div class="side-socials">
+    <a href="https://github.com/ares-coding" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&to=auamores3@gmail.com" target="_blank">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</aside>
+
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <h1 class="hero-title">
+  <span id="typing-text"></span><span class="cursor">|</span>
+</h1>
+
+
     <p class="desc">
-      Hey there, I’m Yu 👋 <br>
-      A passionate Software Developer <br>
-      and aspiring AI Engineer!
+      Hi, I’m <span class="name">Au Amores</span><br />
+      Software Developer and AI Engineer with hands-on experience in<br/>
+      machine learning, Mobile and web development.
     </p>
 
-    <div class="buttons">
-      <a href="#" class="btn primary">View My Works</a>
-      <a href="#" class="btn outline">Contact Me</a>
+<div class="socials">
+    <div class="socials">
+      <a href="https://github.com/ares-coding" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:auamores3@email.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://instagram.com/ares_coding" target="_blank">  
+    <i class="fa-brands fa-instagram"></i>
+    <a href="https://facebook.com/arescoding.99/" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
     </div>
   </section>
+
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>Glowing Portfolio</h3>
+      <p>
+        A personal portfolio website with glowing UI effects,
+        animations, and mobile-responsive design.
+      </p>
+      <div class="tech">HTML • CSS • JS • Vercel</div>
+      <div class="project-links">
+        <a href="https://glowing-portfolio.vercel.app" target="_blank" class="btn primary">Live</a>
+        <a href="https://github.com/ares-coding/glowing-portfolio" target="_blank" class="btn outline">GitHub</a>
+        
+</a>
+</a>
+
+</a>
+
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card reveal">
+      <h3>Alcohol Intoxication Detection</h3>
+      <p>
+        AI system that detects alcohol intoxication using
+        image processing and machine learning models.
+      </p>
+      <div class="tech">Python • CNN • SVM • HYBRID</div>
+
+      <div class="project-links">
+        <a href="#" class="btn primary">Details</a>
+        <a href="#" class="btn outline">GitHub</a>
+      </div>
+    </div>
+
+    
+
+    <!-- MORE PROJECTS COMING -->
+    <div class="project-card coming-soon reveal">
+      <h3>More Projects Coming…</h3>
+      <p>
+        I’m continuously learning and building new projects.
+        This section will grow over time.
+      </p>
+      
+      <div class="tech">In Progress 🚀</div>
+    
+    </div>
+      </div>
+      </section>
+
+ <!-- TOOLS & TECH STACK -->
+<section id="tech-stack" class="tech-stack">
+  <h2 class="section-title">Tech Stacks</h2>
+
+  <div class="tech-grid">
+
+    <!-- Languages & Frameworks -->
+    <div class="tech-box">
+      <h3>Languages & Frameworks</h3>
+      <div class="icon-grid">
+        <div class="tech-icon" data-name="Python">
+          <img src="assets/icons/python.png" alt="Python">
+        </div>
+        <div class="tech-icon" data-name="JavaScript">
+          <img src="assets/icons/javascript.png" alt="JavaScript">
+        </div>
+        <div class="tech-icon" data-name="HTML5">
+          <img src="assets/icons/html.png" alt="HTML">
+        </div>
+        <div class="tech-icon" data-name="CSS3">
+          <img src="assets/icons/css.png" alt="CSS">
+        </div>
+        <div class="tech-icon" data-name="React">
+          <img src="assets/icons/react.png" alt="React">
+        </div>
+        <div class="tech-icon" data-name="Bootstrap">
+          <img src="assets/icons/bootstrap.png" alt="Bootstrap">
+        </div>
+        <div class="tech-icon" data-name="PHP">
+          <img src="assets/icons/php.png" alt="PHP">
+        </div>
+      </div>
+    </div>
+
+    <!-- Machine Learning & AI -->
+    <div class="tech-box">
+      <h3>Machine Learning & AI</h3>
+      <div class="icon-grid">
+        <div class="tech-icon" data-name="TensorFlow">
+          <img src="assets/icons/tensorflow.png" alt="TensorFlow">
+        </div>
+        <div class="tech-icon" data-name="Keras">
+          <img src="assets/icons/keras.png" alt="Keras">
+        </div>
+        <div class="tech-icon" data-name="OpenCV">
+          <img src="assets/icons/opencv.png" alt="OpenCV">
+        </div>
+        <div class="tech-icon" data-name="Scikit-learn">
+          <img src="assets/icons/sklearn.png" alt="Scikit Learn">
+        </div>
+        <div class="tech-icon" data-name="Google Colab">
+          <img src="assets/icons/colab.png" alt="Google Colab">
+        </div>
+      </div>
+    </div>
+
+    <!-- Developer Tools -->
+    <div class="tech-box">
+      <h3>Developer Tools</h3>
+      <div class="icon-grid">
+        <div class="tech-icon" data-name="VS Code">
+          <img src="assets/icons/vscode.png" alt="VS Code">
+        </div>
+        <div class="tech-icon" data-name="Git">
+          <img src="assets/icons/git.png" alt="Git">
+        </div>
+        <div class="tech-icon" data-name="GitHub">
+          <img src="assets/icons/github.png" alt="GitHub">
+        </div>
+        <div class="tech-icon" data-name="Docker">
+          <img src="assets/icons/docker.png" alt="Docker">
+        </div>
+        <div class="tech-icon" data-name="Android Studio">
+          <img src="assets/icons/androidstudio.png" alt="Android Studio">
+        </div>
+        <div class="tech-icon" data-name="Chat GPT">
+          <img src="assets/icons/chatgpt.png" alt="Chat GPT">
+        </div>
+        <div class="tech-icon" data-name="PyCharm">
+          <img src="assets/icons/pycharm.png" alt="PyCharm">
+        </div>
+        <div class="tech-icon" data-name="Figma">
+          <img src="assets/icons/figma.png" alt="Figma">
+        </div>
+        <div class="tech-icon" data-name="Canva">
+          <img src="assets/icons/canva.png" alt="Canva">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="experience" class="experience-section">
+
+  <h2 class="section-title">Experience</h2>
+
+  <div class="experience-list">
+
+    <!-- Freelance Software Developer -->
+    <div class="experience-card">
+      <span class="year-badge">2023 – Present</span>
+
+      <h3>Freelance Software Developer</h3>
+      <p class="role">Remote / Project-Based</p>
+
+      <p class="desc">
+        Working as a remote freelance software developer, focusing on websites
+        and mobile applications. Experienced in system assistance, automation,
+        and technical support. Collaborates with clients on custom solutions,
+        portfolio websites, and prototype-level applications.
+      </p>
+
+      <div class="skill-tags">
+        <span class="skill-tag">Web Development</span>
+        <span class="skill-tag">Mobile Applications</span>
+        <span class="skill-tag">AI Assistance</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">HTML & CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Client Communication</span>
+      </div>
+    </div>
+
+    <!-- Recruitment Officer -->
+    <div class="experience-card">
+      <span class="year-badge">2024 – 2025</span>
+
+      <h3>Recruitment Officer</h3>
+      <p class="role">Deployment / Processing Support</p>
+
+      <p class="desc">
+        Assisted applicants with documentation, data encoding, and record
+        verification while ensuring accuracy and compliance throughout the
+        recruitment and deployment process.
+      </p>
+
+      <div class="skill-tags">
+        <span class="skill-tag">Data Entry</span>
+        <span class="skill-tag">MS Office</span>
+        <span class="skill-tag">Document Handling</span>
+        <span class="skill-tag">Record Management</span>
+        <span class="skill-tag">Customer Service</span>
+        <span class="skill-tag">Filing</span>
+        <span class="skill-tag">Google Workspace</span>
+        <span class="skill-tag">Appointment Setting</span>
+      </div>
+    </div>
+
+    <!-- Online Seller -->
+    <div class="experience-card">
+      <span class="year-badge">2021 – 2022</span>
+
+      <h3>Online Seller / Entrepreneur</h3>
+      <p class="role">Facebook Marketplace</p>
+
+      <p class="desc">
+        Managed online sales through Facebook Marketplace, handling customer
+        inquiries, order processing, and basic digital marketing activities.
+      </p>
+
+      <div class="skill-tags">
+        <span class="skill-tag">Customer Support</span>
+        <span class="skill-tag">Order Processing</span>
+        <span class="skill-tag">Social Media</span>
+        <span class="skill-tag">Canva</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Let’s Work Together</h2>
+  <p class="contact-subtitle">
+    Open to remote opportunities, freelance projects, and collaborations.
+  </p>
+
+  <div class="contact-actions">
+    <a 
+   href="mailto:auamores3@gmail.com?subject=Portfolio Inquiry" class="cta-btn primary">
+   EMAIL ME
+</a>
+
+      </div>
+</section>
+
+<script src="script.js"></script>
+
+<script src="script.js"></script>
+
 </body>
 </html>
+
+<footer class="footer">
+  <p>© 2025 Au Amores. All rights reserved.</p>
+</footer>
