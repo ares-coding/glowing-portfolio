@@ -95,12 +95,12 @@ body {
   padding: 40px 20px 80px;
 }
 
-/* TITLE – DIKIT NA DIKIT SA CARDS */
+
 .section-title {
   text-align: center;
   font-size: 2.5rem;
   color: #ffcc00;
-  margin-bottom: 16px; /* 🔑 KEY FIX */
+  margin-bottom: 16px; 
 }
 
 /* GRID */
@@ -109,7 +109,7 @@ body {
   grid-template-columns: repeat(2, minmax(280px, 420px));
   justify-content: center;
   gap: 30px;
-  margin-top: 0; /* 🔑 IMPORTANT */
+  margin-top: 0; 
 }
 
 
@@ -224,16 +224,13 @@ body {
 .coming-soon {
   grid-column: span 2;
 }
-/* FORCE GLOW DEBUG */
 .project-card:hover {
   transform: translateY(-6px) !important;
   box-shadow:
     0 0 25px rgba(255, 204, 0, 0.6),
     0 0 60px rgba(255, 204, 0, 0.35) !important;
 }
-/* =========================
-   TOOLS & TECH STACK
-========================= */
+
 
 .tools {
   padding: 80px 20px;
@@ -267,16 +264,13 @@ body {
   min-height: 140px;
 }
 
-/* Glow on hover */
+
 .tool-card:hover {
   transform: translateY(-6px);
   box-shadow:
     0 0 20px rgba(255, 204, 0, 0.35),
     0 0 40px rgba(255, 204, 0, 0.15);
 }
-/* =========================
-   SCROLL REVEAL ANIMATION
-========================= */
 
 .reveal {
   opacity: 0;
@@ -854,7 +848,7 @@ html, body {
   border: 1px solid rgba(255, 208, 0, 0.35);
   border-radius: 16px;
   padding: 24px;
-  width: 320px; /* 🔥 THIS FIXES RECTANGLE */
+  width: 320px;  
   text-align: center;
   box-shadow: 0 0 25px rgba(255, 208, 0, 0.08);
 }
@@ -953,11 +947,6 @@ html, body {
 }
 
 
-
-/* =========================
-   TECH STACK – FINAL CLEAN
-========================= */
-
 .tech-stack {
   padding: 80px 20px;
   text-align: center;
@@ -993,11 +982,10 @@ html, body {
   font-size: 18px;
 }
 
-/* ICON GRID – DIKIT NA DIKIT 🔥 */
 .tech-icons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;              /* 🔑 tight spacing */
+  gap: 12px;      
   justify-items: center;
 }
 
@@ -1132,9 +1120,9 @@ html, body {
 html {
   scroll-behavior: smooth;
 }
-/* =========================
-   MOBILE PROJECT CARD FIX
-   ========================= */
+
+   
+   
 @media (max-width: 768px) {
 
   /* Project section container */
@@ -1186,3 +1174,283 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coming-soon {
+    grid-column: span 1;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
+
+  .project-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.project-details {
+  max-width: 900px;
+  margin: 120px auto 80px;
+  padding: 40px 30px;
+
+  background: #0b0b0b;
+  border: 1px solid rgba(255, 204, 0, 0.35);
+  border-radius: 20px;
+
+  box-shadow:
+    0 0 25px rgba(255, 204, 0, 0.15),
+    0 0 50px rgba(255, 204, 0, 0.05);
+}
+
+/* TITLE */
+.project-details h2 {
+  color: #ffcc00;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* SUB HEADINGS */
+.project-details h3 {
+  color: #ffcc00;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+/* TEXT */
+.project-details p,
+.project-details li {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* LIST */
+.project-details ul {
+  margin-left: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .project-details {
+    margin: 80px 16px;
+    padding: 28px 20px;
+  }
+
+  .project-details h2 {
+    font-size: 1.8rem;
+  }
+}
+.back-projects-wrapper {
+  margin-top: 30px;
+  text-align: left; 
+}
+
+.back-projects {
+  display: inline-block;
+}
+.back-projects-wrapper {
+  margin-top: 30px;
+  text-align: center;
+}
+.back-projects:hover {
+  box-shadow: 0 0 12px rgba(255, 204, 0, 0.6);
+}
+.sample-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.sample-images img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 204, 0, 0.4);
+}
+
+.sample-images figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-top: 6px;
+}
+
+.ethics-note {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.sample-images figure {
+  outline: none;
+}
+
+.sample-images figure:focus,
+.sample-images figure:active {
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+.sample-images figure:focus {
+  outline: none;
+}
+
+.sample-images {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sample-images img {
+  width: 220px;         
+  height: 300px;         
+  object-fit: cover;     
+  border-radius: 14px;
+  border: 1px solid rgba(255, 204, 0, 0.35);
+}
+.sample-images img {
+  filter: brightness(0.95);
+}
+
+/* UI overrides */
+
+/* ---------- ICON SIZE ---------- */
+.tool-card img,
+.tech-icon img,
+.stack-item img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.socials a {
+  font-size: 22px;
+}
+
+/* ---------- TOOL CARDS ---------- */
+.tools .tool-card {
+  min-height: 140px;
+  padding: 20px 10px;
+  border-radius: 14px;
+}
+
+.tools .tool-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow:
+    0 0 18px rgba(255,204,0,0.35),
+    0 0 40px rgba(255,204,0,0.15);
+}
+
+/* ---------- PROJECT CARDS ---------- */
+.projects .project-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 25px rgba(255,204,0,0.6),
+    0 0 60px rgba(255,204,0,0.35);
+}
+
+.projects .project-card:hover::before {
+  opacity: 1;
+}
+
+/* ---------- TECH CARDS ---------- */
+.tech-stack .tech-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(255,204,0,0.35);
+}
+
+/* ---------- GLOW TEXT ---------- */
+.hero .glow {
+  text-shadow:
+    0 0 25px rgba(255,204,0,0.9),
+    0 0 45px rgba(255,204,0,0.6);
+}
+
+/* ---------- COMING SOON ---------- */
+.projects .coming-soon {
+  grid-column: span 2;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .projects .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects .coming-soon {
+    grid-column: span 1;
+  }
+}
+
+
+/* Alcohol Intoxication project – hover glow */
+.project-details,
+.project-card {
+  position: relative;
+}
+
+/* soft idle glow */
+.project-details::before,
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 204, 0, 0.25),
+    transparent 60%
+  );
+  opacity: 0.25;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+/* hover = alive */
+.project-details:hover::before,
+.project-card:hover::before {
+  opacity: 1;
+  animation: glowAlive 2.8s ease-in-out infinite;
+}
+
+/* stronger outer glow */
+.project-details:hover,
+.project-card:hover {
+  box-shadow:
+    0 0 25px rgba(255, 204, 0, 0.55),
+    0 0 55px rgba(255, 204, 0, 0.35);
+}
+
+/* glow movement */
+@keyframes glowAlive {
+  0% {
+    background-position: 30% 30%;
+  }
+  50% {
+    background-position: 70% 60%;
+  }
+  100% {
+    background-position: 30% 30%;
+  }
+}
+
+
